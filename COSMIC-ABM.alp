@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.8.3.202304281216" AlpVersion="8.7.7">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.8.6.202312140432" AlpVersion="8.8.3">
 <Model>
 	<Id>1645250091498</Id>
 	<Name><![CDATA[COSMIC-ABM]]></Name>
@@ -2250,9 +2250,9 @@ https://www.nbs.go.tz/nbs/takwimu/census2012/Fertility%20and%20Nuptiality%20Mono
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<InterpolationMethod>NONE</InterpolationMethod>
-					<Type>DISCRETE</Type>
-					<DefinitionType>HISTOGRAM</DefinitionType>
+					<Type>CONTINUOUS</Type>
+					<DefinitionType>RANGES</DefinitionType>
+					<IntegerValues>true</IntegerValues>
 					<Static>false</Static>
 					<LoadFromDatabase><![CDATA[false]]></LoadFromDatabase>
 					<RangesQuery>
@@ -2262,8 +2262,8 @@ https://www.nbs.go.tz/nbs/takwimu/census2012/Fertility%20and%20Nuptiality%20Mono
 						</StartColumnReference>
 						<EndColumnReference>
 						</EndColumnReference>
-						<NumberOfObservationColumnReference>
-						</NumberOfObservationColumnReference>
+						<WeightColumnReference>
+						</WeightColumnReference>
 					</RangesQuery>
 					<FrequencyQuery>
 					<TableReference>
@@ -2284,8 +2284,8 @@ https://www.nbs.go.tz/nbs/takwimu/census2012/Fertility%20and%20Nuptiality%20Mono
 					</TableReference>
 						<OptionColumnReference>
 						</OptionColumnReference>
-						<NumberOfObservationColumnReference>
-						</NumberOfObservationColumnReference>
+						<WeightColumnReference>
+						</WeightColumnReference>
 					</OptionQuery>					
 					<Argument><![CDATA[0.0]]></Argument>
 					<Argument><![CDATA[1.0]]></Argument>
@@ -2310,22 +2310,43 @@ https://www.nbs.go.tz/nbs/takwimu/census2012/Fertility%20and%20Nuptiality%20Mono
 					<Value><![CDATA[70.0]]></Value>
 					<Value><![CDATA[51.0]]></Value>
 					<Value><![CDATA[92.0]]></Value>
-					<Value><![CDATA[0.0]]></Value>					
+					<Value><![CDATA[0.0]]></Value>
+					<Start><![CDATA[0.0]]></Start>
+					<Start><![CDATA[1.0]]></Start>
+					<Start><![CDATA[2.0]]></Start>
+					<Start><![CDATA[3.0]]></Start>
+					<Start><![CDATA[4.0]]></Start>
+					<Start><![CDATA[5.0]]></Start>
+					<Start><![CDATA[6.0]]></Start>
+					<Start><![CDATA[7.0]]></Start>
+					<Start><![CDATA[8.0]]></Start>
+					<Start><![CDATA[9.0]]></Start>
+					<Start><![CDATA[10.0]]></Start>
+					<End><![CDATA[0.0]]></End>
+					<End><![CDATA[1.0]]></End>
+					<End><![CDATA[2.0]]></End>
+					<End><![CDATA[3.0]]></End>
+					<End><![CDATA[4.0]]></End>
+					<End><![CDATA[5.0]]></End>
+					<End><![CDATA[6.0]]></End>
+					<End><![CDATA[7.0]]></End>
+					<End><![CDATA[8.0]]></End>
+					<End><![CDATA[9.0]]></End>
+					<End><![CDATA[10.0]]></End>
+					<RangeValue><![CDATA[450.0]]></RangeValue>
+					<RangeValue><![CDATA[247.0]]></RangeValue>
+					<RangeValue><![CDATA[236.0]]></RangeValue>
+					<RangeValue><![CDATA[204.0]]></RangeValue>
+					<RangeValue><![CDATA[178.0]]></RangeValue>
+					<RangeValue><![CDATA[139.0]]></RangeValue>
+					<RangeValue><![CDATA[118.0]]></RangeValue>
+					<RangeValue><![CDATA[88.0]]></RangeValue>
+					<RangeValue><![CDATA[70.0]]></RangeValue>
+					<RangeValue><![CDATA[51.0]]></RangeValue>
+					<RangeValue><![CDATA[92.0]]></RangeValue>					
 					<OptionListID><![CDATA[0]]></OptionListID>
 					<OptionValues>				
-					</OptionValues>
-					<Argument><![CDATA[0.0]]></Argument>
-					<Argument><![CDATA[1.0]]></Argument>
-					<Argument><![CDATA[2.0]]></Argument>
-					<Argument><![CDATA[3.0]]></Argument>
-					<Argument><![CDATA[4.0]]></Argument>
-					<Argument><![CDATA[5.0]]></Argument>
-					<Argument><![CDATA[6.0]]></Argument>
-					<Argument><![CDATA[7.0]]></Argument>
-					<Argument><![CDATA[8.0]]></Argument>
-					<Argument><![CDATA[9.0]]></Argument>
-					<Argument><![CDATA[10.0]]></Argument>
-					<Argument><![CDATA[11.0]]></Argument>				
+					</OptionValues>				
 				</CustomDistribution>		
 			</CustomDistributions>
 			<AnalysisData>
@@ -16998,7 +17019,7 @@ After Performance Cycle]]></Text>
 				<Text>
 					<Id>1672224170104</Id>
 					<Name><![CDATA[text11]]></Name>
-					<X>110</X><Y>90</Y>
+					<X>110</X><Y>80</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -17008,10 +17029,17 @@ After Performance Cycle]]></Text>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-sunt in culpa qui officia deserunt mollit anim id est laborum.]]></Text>
+					<Text><![CDATA[We're excited to present our user-friendly interactive tool designed to allow users to  explore the model workings
+and run test scenarios, providing insights into the dynamics of healthcare facilities under a Pay-for-Performance (P4P) 
+scheme. Based on anonymized facility data, this model represents a synthesis of healthcare policy analysis and 
+computational modeling, with a focus on Maternal and Child Healthcare in Tanzania's Bagamoyo district. 
+
+Serving as a valuable exploratory tool, this publicly available model offers researchers, 
+policymakers, and healthcare practitioners a unique opportunity to manipulate 
+model and examine the potential impacts of various policy options in a simulated environment. 
+By interacting with the model, users will gain a deeper understanding of the complex 
+dynamics that drive healthcare utilization and the potential for improving service coverage 
+through health financing reforms.]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>11</Size>
@@ -17023,7 +17051,7 @@ sunt in culpa qui officia deserunt mollit anim id est laborum.]]></Text>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1674827405868</Id>
 					<Name><![CDATA[DrugSharing]]></Name>
-					<X>340</X><Y>400</Y>
+					<X>340</X><Y>410</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -17074,7 +17102,7 @@ sunt in culpa qui officia deserunt mollit anim id est laborum.]]></Text>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="240" Height="30">
+					<BasicProperties Width="310" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<TextColor/>
 						<Enabled>true</Enabled>
@@ -17292,42 +17320,52 @@ sunt in culpa qui officia deserunt mollit anim id est laborum.]]></Text>
 		<Resource>
 			<Path><![CDATA[logo_1600x900.jpg]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[Cosmic_Logo.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[Logo_2.jpg]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[Ifakara_Logo.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[FacilityIcon.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[RunFacilityOutputs.txt]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[RunCommOutputs.txt]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[List of Variables.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[managerImage.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[delayIcon.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
 		</Resource>
 	</ModelResources>
     <RequiredLibraryReference>
